@@ -19,16 +19,8 @@ function createListItemMarkup (items) {
   </a>`).join('')
 }
 
-boxGalleryItems.addEventListener('click', onImageClick)
-
-
-function onImageClick(evt) {
-    evt.preventDefault()
-if (evt.target.nodeName !== 'IMG') {
-    return
-}
 
 
 const lightbox = new SimpleLightbox('.gallery a', {captionsData: "alt",
-captionDelay: 250,});}
+captionDelay: 250,});
 
